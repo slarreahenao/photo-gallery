@@ -1,13 +1,16 @@
 import React from 'react'
+import Header from '../../organisms/header/header'
+import Gallery from '../../organisms/gallery/gallery'
+import Footer from '../../organisms/footer/footer'
+import HomeTemplateProps from '../../../interfaces/home/home-props'
 
-const HomeTemplate = () => {
+const HomeTemplate = (props: HomeTemplateProps) => {
+  const { title } = props
   return (
     <>
-      <header></header>
-      <main>
-        <h1>Home</h1>
-      </main>
-      <footer></footer>
+      <Header title={title} />
+      <Gallery />
+      <Footer />
     </>
   )
 }
