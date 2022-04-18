@@ -1,8 +1,9 @@
 import React from 'react'
+import Home from './pages/home/home'
 import './App.scss'
 
 const App = () => {
-  return <h1>Hola mundo</h1>
+  return <Home />
 }
 
 export default App
